@@ -1,0 +1,26 @@
+
+--- data type validation before cleaning ---
+CloseDate         str
+Latitude      float64
+Longitude     float64
+ClosePrice    float64
+dtype: object
+
+--- date consistency flag counts ---
+listing date occurs after close date:  61
+purchase date occurs after close date: 240
+overall timeline sequence violations:  508
+
+--- geographic data quality summary ---
+missing coordinate entries:      15,948
+zero (sentinel null) placement:  27
+positive longitude text errors:  31
+out-of-state/off-map coordinates: 63
+
+--- data shape transformation summary ---
+initial dataset shape:  414,063 rows, 86 columns
+cleaned dataset shape:  413,571 rows, 78 columns
+redundant columns dropped: 15
+invalid rows filtered out: 492
+
+success: analysis-ready dataset saved to C:\GitHub\IDX-Exchange-MLS-Analytics\sold_cleaned.csv
